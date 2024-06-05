@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class FirstFrame {
     public FirstFrame( ) {
-
+        initFrame();
     }
 
     private JPanel mainFrame;
