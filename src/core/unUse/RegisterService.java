@@ -1,5 +1,3 @@
-package core.service;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -9,9 +7,13 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import core.database.Database;
-import core.first.jpanel.LoginJPanel;
-import core.first.jpanel.RegisterJPanel;
-import other.Tool;
+import core.ui.first.LoginJpanel;
+import core.ui.first.RegisterJpanel;
+import core.model.UserBank;
+import core.util.Tool;
+
+import static app.Main.registerFrame;
+import static app.Main.registerJpanel;
 
 /**
  * -开始信息处理类
@@ -21,12 +23,6 @@ import other.Tool;
 public class RegisterService {
 	
 	private JFrame jf = null;
-	private JTextField jtf_re_username = RegisterJPanel.getJtf_re_username();
-	private JPasswordField jpf_re_password1 = RegisterJPanel.getJtf_re_password1();
-	private JPasswordField jpf_re_password2 = RegisterJPanel.getJtf_re_password2();
-	private JTextField jtf_re_name = RegisterJPanel.getJtf_re_name();
-	private JTextField jtf_re_id = RegisterJPanel.getJtf_re_id();
-	private JTextField jtf_re_phone = RegisterJPanel.getJtf_re_phone();
 	private UserBank ub; 
 	
 	public RegisterService(JFrame jf) throws ClassNotFoundException, SQLException {
@@ -74,11 +70,7 @@ public class RegisterService {
 						+ "('" + ub.getUsername() + "','" + ub.getPassword1() + "','"+ ub.getName() + "','"+ ub.getId() +"','"+ub.getPhone()+"');" );
 				JOptionPane.showMessageDialog(jf, "恭喜你，注册成功！");
 				//注册成功，跳转登录界面
-				LoginJPanel.getJp_login().setVisible(true);
-				RegisterJPanel.getJp_register().setVisible(false);
-				
-				//重置文本框
-				RegisterJPanel.resetAll();
+				registerFrame.dispose();
 			}
 		}
 	}

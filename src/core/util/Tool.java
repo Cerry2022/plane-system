@@ -33,11 +33,7 @@ public class Tool {
 		}
 		return arr;
 	}
-	
-	//传入JTextField，返回对应的值
-	public static String getTextValue(JTextField jtf) {
-		return String.valueOf(jtf.getText()).trim();
-	}
+
 	
 	//传入面板，设置边框
 	public static void setBorder(JPanel jp) {

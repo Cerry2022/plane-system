@@ -1,4 +1,3 @@
-package core.service;
 import java.sql.SQLException;
 
 import javax.swing.JFrame;

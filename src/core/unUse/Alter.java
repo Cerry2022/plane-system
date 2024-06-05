@@ -1,5 +1,3 @@
-package core.database;
-
 import java.sql.SQLException;
 
 import javax.swing.JFrame;
@@ -7,8 +5,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 
-import core.admin.inquiry.Inquiry;
-import core.admin.jpanel.InquiryJPanel;
+import core.service.Inquiry;
+import core.ui.admin.InquiryJPanel;
 import core.database.Database;
 
 import core.util.Tool;
