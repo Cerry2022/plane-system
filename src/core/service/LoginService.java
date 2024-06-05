@@ -9,7 +9,7 @@ import javax.swing.JTextField;
 
 import core.ui.admin.AdminFrame;
 import core.database.Database;
-import core.first.jpanel.LoginJPanel;
+import core.ui.first.LoginJpanel;
 import core.ui.user.UserFrame;
 import core.util.Global;
 import core.util.Tool;
@@ -17,11 +17,9 @@ import core.util.Tool;
 public class LoginService {
 	
 	private JFrame jf = null;
-	private JTextField jtf_lo_username = LoginJPanel.getJtf_lo_username();
-	private JPasswordField jpf_lo_password = LoginJPanel.getJpf_lo_password();
 	
-	private String username = Tool.getTextValue(jtf_lo_username);
-	private String password = Tool.getTextValue(jpf_lo_password);
+	private String username = LoginJpanel.getUserName();
+	private String password = LoginJpanel.getUserPassword();
 	private String name;
 	public LoginService(JFrame jf) throws ClassNotFoundException, SQLException {
 		super();
@@ -47,7 +45,6 @@ public class LoginService {
 		boolean result = true;
 		if(result) {
 			JOptionPane.showMessageDialog(jf, "登录成功，正在跳转...");
-			Global.getJf1().setVisible(false);
 			if(username.equals("admin")) {
 				new AdminFrame(name);
 			}else {
@@ -55,7 +52,6 @@ public class LoginService {
 			}
 		}else {
 			JOptionPane.showMessageDialog(jf, "登录失败，用户名或者密码错误！");
-			jtf_lo_username.requestFocus();
 		}
 	}
 	

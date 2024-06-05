@@ -1,6 +1,7 @@
 package app;
 
-import com.formdev.flatlaf.FlatLightLaf;
+import com.formdev.flatlaf.*;
+import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import core.ui.first.LoginJpanel;
 
 import javax.swing.*;
@@ -13,10 +14,12 @@ import javax.swing.*;
 public class Main {
 
     public static void main(String[] args) {
-        FlatLightLaf.setup();
+        //FlatLightLaf.setup();
+        FlatMacLightLaf.setup();
+
+        //FlatIntelliJLaf.setup();
 
         //FirstFrame mf = new FirstFrame();
-        FlatLightLaf.install();
 
         UIManager.put( "Button.arc", 15 );
         UIManager.put( "Component.arc", 15 );
@@ -27,6 +30,7 @@ public class Main {
         frame.setContentPane(new LoginJpanel().LoginJpanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
+        frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setVisible(true);
         // new AdminFrame("管理员");

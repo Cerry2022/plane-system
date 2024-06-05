@@ -5,6 +5,7 @@ import com.formdev.flatlaf.FlatLightLaf;
 import javax.swing.*;
 
 public class RegisterJpanel {
+    public JPanel registerJpanel;
     private JTextField textField1;
     private JPasswordField passwordField1;
     private JPasswordField passwordField2;
@@ -14,15 +15,7 @@ public class RegisterJpanel {
     private JLabel password2Lable;
     private JButton cancelRegisterButton;
     private JButton registerButton;
-    private JPanel registerJpanel;
+
     private JTextField textField2;
 
-    public static void main(String[] args) {
-        FlatLightLaf.install();
-        JFrame frame = new JFrame("RegisterJpanel");
-        frame.setContentPane(new RegisterJpanel().registerJpanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
-    }
 }
