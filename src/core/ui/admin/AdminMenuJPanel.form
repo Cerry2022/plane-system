@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="core.ui.admin.AdminMenuJPanel">
+  <grid id="27dc6" binding="adminMenuJPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="900" height="600"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+      <maximumSize width="-1" height="-1"/>
+      <minimumSize width="900" height="600"/>
+      <preferredSize width="900" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="be83f" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="2474e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="24" style="1"/>
+              <text value="机票预订管理系统"/>
+            </properties>
+          </component>
+          <component id="55a44" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <alignmentY value="0.1"/>
+              <autoscrolls value="false"/>
+              <doubleBuffered value="false"/>
+              <icon value="plane_88296.png"/>
+              <iconTextGap value="4"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="false"/>
+              <requestFocusEnabled value="true"/>
+              <text value=""/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+          </component>
+          <hspacer id="e927a">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="30" height="-1"/>
+              </grid>
+            </constraints>
+          </hspacer>
+          <hspacer id="f6ac4">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <grid id="49c8a" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="e0eb6" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13074953"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="91e65" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="0" bottom="5" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13074953"/>
+                  <focusCycleRoot value="true"/>
+                  <focusTraversalPolicyProvider value="false"/>
+                  <focusable value="true"/>
+                  <inheritsPopupMenu value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="28b3" class="javax.swing.JButton" binding="航班航次管理Button" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="120" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-10972941"/>
+                      <borderPainted value="false"/>
+                      <contentAreaFilled value="true"/>
+                      <defaultCapable value="true"/>
+                      <font name="Microsoft YaHei" size="18" style="1"/>
+                      <foreground color="-1"/>
+                      <horizontalTextPosition value="0"/>
+                      <margin top="5" left="5" bottom="5" right="5"/>
+                      <text value="航班航次管理"/>
+                      <verticalTextPosition value="1"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="70464" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="0" bottom="5" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13074953"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="b720c" class="javax.swing.JButton" binding="订单管理Button" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="120" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-13074953"/>
+                      <contentAreaFilled value="false"/>
+                      <font name="Microsoft YaHei" size="18" style="1"/>
+                      <foreground color="-1"/>
+                      <horizontalTextPosition value="0"/>
+                      <margin top="5" left="5" bottom="5" right="5"/>
+                      <text value="订单管理"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="b2e88" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="0" bottom="5" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13074953"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="26276" class="javax.swing.JButton" binding="用户管理Button" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="120" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-13074953"/>
+                      <contentAreaFilled value="false"/>
+                      <font name="Microsoft YaHei" size="18" style="1"/>
+                      <foreground color="-1"/>
+                      <margin top="5" left="5" bottom="5" right="5"/>
+                      <text value="用户管理"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="b372b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="0" bottom="5" right="0"/>
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13074953"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="316d4" class="javax.swing.JButton" binding="button2" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="120" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-13074953"/>
+                      <contentAreaFilled value="false"/>
+                      <font name="Microsoft YaHei" size="18" style="1"/>
+                      <foreground color="-1"/>
+                      <margin top="5" left="5" bottom="5" right="5"/>
+                      <text value="Button"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <vspacer id="72e1">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="b6eaf">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="50"/>
+                  </grid>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="9b4b3" binding="viewJPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -24,7 +24,7 @@ public class Database {
 	
 	//链接数据库
 	public void connect() throws SQLException, ClassNotFoundException {
-		Class.forName("com.mysql.jdbc.Driver");
+		// Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection(url, sqluser, sqlpass);
 		stmt = conn.createStatement();
 	}
@@ -40,6 +40,16 @@ public class Database {
 
 		return rs;
 	}
+	// 获取连接对象
+	public Connection getConnection() throws SQLException {
+		try {
+			connect();
+		} catch (ClassNotFoundException e) {
+			System.out.println("数据库连接失败！");
+		}
+		return conn;
+	}
+
 	
 	//更新数据
 	public void setUpdate(String sql) throws SQLException {

@@ -5,9 +5,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.SQLException;
 
-import static app.Main.registerFrame;
-import static app.Main.registerJpanel;
+import core.service.LoginService;
+
+import static app.Main.*;
 
 public class LoginJpanel {
     public JPanel LoginJpanel;
@@ -23,7 +25,13 @@ public class LoginJpanel {
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                try {
+                    new LoginService(loginJFrame);
+                } catch (ClassNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
         });
         cancelLoginButton.addActionListener(new ActionListener() {
@@ -36,16 +44,16 @@ public class LoginJpanel {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (!isRegisterWindowOpen) {
-                    registerFrame.setContentPane(registerJpanel.registerJpanel);
-                    registerFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                    registerFrame.pack();
-                    registerFrame.setLocationRelativeTo(null);
-                    registerFrame.setResizable(false);
-                    registerFrame.setVisible(true);
+                    registerJFrame.setContentPane(registerJPanel.registerJpanel);
+                    registerJFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    registerJFrame.pack();
+                    registerJFrame.setLocationRelativeTo(null);
+                    registerJFrame.setResizable(false);
+                    registerJFrame.setVisible(true);
                     isRegisterWindowOpen = true;
 
                     // 添加窗口监听器，确保注册窗口关闭后重新启用点击事件
-                    registerFrame.addWindowListener(new java.awt.event.WindowAdapter() {
+                    registerJFrame.addWindowListener(new java.awt.event.WindowAdapter() {
                         @Override
                         public void windowClosed(java.awt.event.WindowEvent windowEvent) {
                             isRegisterWindowOpen = false;

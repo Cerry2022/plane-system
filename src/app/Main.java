@@ -1,6 +1,7 @@
 package app;
 
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
+import core.ui.admin.AdminFrame;
 import core.ui.first.LoginJpanel;
 import core.ui.first.RegisterJpanel;
 
@@ -12,37 +13,36 @@ import javax.swing.*;
  *
  */
 public class Main {
-    public static JFrame loginFrame;
-    public static JFrame registerFrame;
-    public static LoginJpanel loginJpanel;
-    public static RegisterJpanel registerJpanel;
+    public static JFrame loginJFrame;
+    public static JFrame registerJFrame;
+    public static LoginJpanel loginJPanel;
+    public static RegisterJpanel registerJPanel;
+
+    public static AdminFrame AdminFrame;
 
     public static void main(String[] args) {
         //FlatLightLaf.setup();
         FlatMacLightLaf.setup();
-
         //FlatIntelliJLaf.setup();
-
-        //FirstFrame mf = new FirstFrame();
-
-        UIManager.put( "Button.arc", 15 );
+        UIManager.put( "Button.arc", 20 );
         UIManager.put( "Component.arc", 15 );
         UIManager.put( "ProgressBar.arc", 15 );
-        UIManager.put( "TextComponent.arc", 15 );
+        UIManager.put( "TextComponent.arc", 10 );
 
 
-        loginFrame = new JFrame("机票预定管理系统");
-        registerFrame = new JFrame("用户注册");
-        loginJpanel = new LoginJpanel();
-        registerJpanel = new RegisterJpanel();
+        loginJFrame = new JFrame("机票预定管理系统");
+        registerJFrame = new JFrame("用户注册");
+        loginJPanel = new LoginJpanel();
+        registerJPanel = new RegisterJpanel();
 
+        AdminFrame = new AdminFrame();
 
-        loginFrame.setContentPane(loginJpanel.LoginJpanel);
-        loginFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        loginFrame.pack();
-        loginFrame.setLocationRelativeTo(null);
-        loginFrame.setResizable(false);
-        loginFrame.setVisible(true);
+/*        loginJFrame.setContentPane(loginJPanel.LoginJpanel);
+        loginJFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        loginJFrame.pack();
+        loginJFrame.setLocationRelativeTo(null);
+        loginJFrame.setResizable(false);
+        loginJFrame.setVisible(true);*/
         // new AdminFrame("管理员");
         // new UserFrame("a12345","张三");
     }
