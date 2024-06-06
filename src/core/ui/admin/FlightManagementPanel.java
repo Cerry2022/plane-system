@@ -1,14 +1,13 @@
 package core.ui.admin;
 
-import com.formdev.flatlaf.themes.FlatMacLightLaf;
 
 import javax.swing.*;
 
 public class FlightManagementPanel {
+    public JPanel flightManagementPanel;
     private JTable table1;
     private JButton 查询Button;
     private JTextField textField4;
-    public JPanel flightManagementPanel;
     private JButton 添加Button;
     private JButton 取消修改Button;
     private JButton 删除Button;

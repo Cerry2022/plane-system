@@ -10,13 +10,12 @@ import java.sql.SQLException;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-import static app.Main.loginJPanel;
-import static app.Main.adminFrame;
+import static app.Main.*;
 
 
 public class LoginService {
 	
-	private JFrame jf = null;
+	private JFrame jf;
 	
 	private final String username;
 	private final String password;
@@ -56,6 +55,7 @@ public class LoginService {
 			if(username.equals("admin")) {
 				//new AdminFrame(name);
 				adminFrame = new AdminFrame();
+				loginJFrame.dispose();
 			}else {
 				System.out.println("普通用户登录成功");
 				//new UserFrame(username, name);
