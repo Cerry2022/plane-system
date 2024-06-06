@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class FlightManagementPanel {
     public JPanel flightManagementPanel;
-    private JTable table1;
+    public JTable flightTable;
     private JButton 查询Button;
     private JTextField textField4;
     private JButton 添加Button;

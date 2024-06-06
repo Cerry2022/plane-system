@@ -92,7 +92,7 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="28b3" class="javax.swing.JButton" binding="航班航次管理Button" default-binding="true">
+                  <component id="28b3" class="javax.swing.JButton" binding="flightManagementButton">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="120" height="-1"/>
@@ -105,7 +105,6 @@
                       <defaultCapable value="true"/>
                       <font name="Microsoft YaHei" size="18" style="1"/>
                       <foreground color="-1"/>
-                      <horizontalTextPosition value="0"/>
                       <margin top="5" left="5" bottom="5" right="5"/>
                       <text value="航班航次管理"/>
                       <verticalTextPosition value="1"/>
@@ -123,18 +122,18 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="b720c" class="javax.swing.JButton" binding="订单管理Button" default-binding="true">
+                  <component id="b720c" class="javax.swing.JButton" binding="orderManagementButton">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="120" height="-1"/>
                       </grid>
                     </constraints>
                     <properties>
                       <background color="-13074953"/>
-                      <contentAreaFilled value="false"/>
+                      <borderPainted value="false"/>
+                      <contentAreaFilled value="true"/>
                       <font name="Microsoft YaHei" size="18" style="1"/>
                       <foreground color="-1"/>
-                      <horizontalTextPosition value="0"/>
                       <margin top="5" left="5" bottom="5" right="5"/>
                       <text value="订单管理"/>
                     </properties>
@@ -151,7 +150,7 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="26276" class="javax.swing.JButton" binding="用户管理Button" default-binding="true">
+                  <component id="26276" class="javax.swing.JButton" binding="userManagementButton">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="120" height="-1"/>
@@ -159,7 +158,8 @@
                     </constraints>
                     <properties>
                       <background color="-13074953"/>
-                      <contentAreaFilled value="false"/>
+                      <borderPainted value="false"/>
+                      <contentAreaFilled value="true"/>
                       <font name="Microsoft YaHei" size="18" style="1"/>
                       <foreground color="-1"/>
                       <margin top="5" left="5" bottom="5" right="5"/>
@@ -186,7 +186,8 @@
                     </constraints>
                     <properties>
                       <background color="-13074953"/>
-                      <contentAreaFilled value="false"/>
+                      <borderPainted value="false"/>
+                      <contentAreaFilled value="true"/>
                       <font name="Microsoft YaHei" size="18" style="1"/>
                       <foreground color="-1"/>
                       <margin top="5" left="5" bottom="5" right="5"/>

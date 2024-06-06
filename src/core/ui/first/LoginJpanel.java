@@ -7,7 +7,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.SQLException;
 
-import core.service.LoginService;
+import core.service.loginService;
 
 import static app.Main.*;
 
@@ -26,7 +26,7 @@ public class LoginJpanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    new LoginService(loginJFrame);
+                    new loginService(loginJFrame);
                 } catch (ClassNotFoundException ex) {
                     throw new RuntimeException(ex);
                 } catch (SQLException ex) {
@@ -37,19 +37,16 @@ public class LoginJpanel {
         cancelLoginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                loginJFrame.dispose();
             }
         });
         registerLable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (!isRegisterWindowOpen) {
-                    registerJFrame.setContentPane(registerJPanel.registerJpanel);
-                    registerJFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                    registerJFrame.pack();
-                    registerJFrame.setLocationRelativeTo(null);
-                    registerJFrame.setResizable(false);
-                    registerJFrame.setVisible(true);
+
+                    registerJPanel.registerFrameInit();
+
                     isRegisterWindowOpen = true;
 
                     // 添加窗口监听器，确保注册窗口关闭后重新启用点击事件
@@ -67,6 +64,15 @@ public class LoginJpanel {
                 super.mouseReleased(e);
             }
         });
+    }
+
+    public void loginFrameInit(){
+        loginJFrame.setContentPane(loginJPanel.LoginJpanel);
+        loginJFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        loginJFrame.pack();
+        loginJFrame.setLocationRelativeTo(null);
+        loginJFrame.setResizable(false);
+        loginJFrame.setVisible(true);
     }
 
 

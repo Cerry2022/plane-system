@@ -13,14 +13,14 @@ import javax.swing.JOptionPane;
 import static app.Main.*;
 
 
-public class LoginService {
+public class loginService {
 	
 	private JFrame jf;
 	
 	private final String username;
 	private final String password;
 	private String name;
-	public LoginService(JFrame jf) throws ClassNotFoundException, SQLException {
+	public loginService(JFrame jf) throws ClassNotFoundException, SQLException {
 		super();
 		this.jf = jf;
 		username = loginJPanel.getUserName();

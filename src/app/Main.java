@@ -1,6 +1,7 @@
 package app;
 
-import com.formdev.flatlaf.themes.FlatMacLightLaf;
+import com.formdev.flatlaf.FlatLightLaf;
+
 import core.ui.admin.AdminFrame;
 import core.ui.first.LoginJpanel;
 import core.ui.first.RegisterJpanel;
@@ -21,9 +22,9 @@ public class Main {
     public static AdminFrame adminFrame;
 
     public static void main(String[] args) {
-        //FlatLightLaf.setup();
-        FlatMacLightLaf.setup();
-        //FlatIntelliJLaf.setup();
+        FlatLightLaf.setup();
+        //FlatMacLightLaf.setup();
+        //FlatDarkLaf.setup();
         UIManager.put( "Button.arc", 20 );
         UIManager.put( "Component.arc", 15 );
         UIManager.put( "ProgressBar.arc", 15 );
@@ -35,14 +36,10 @@ public class Main {
         loginJPanel = new LoginJpanel();
         registerJPanel = new RegisterJpanel();
 
+        loginJPanel.loginFrameInit();
 
-        loginJFrame.setContentPane(loginJPanel.LoginJpanel);
-        loginJFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        loginJFrame.pack();
-        loginJFrame.setLocationRelativeTo(null);
-        loginJFrame.setResizable(false);
-        loginJFrame.setVisible(true);
-        // new AdminFrame("管理员");
-        // new UserFrame("a12345","张三");
     }
+
+
+
 }

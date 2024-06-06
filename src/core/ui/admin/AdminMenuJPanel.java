@@ -6,9 +6,9 @@ import java.awt.*;
 public class AdminMenuJPanel {
 
     private JButton button2;
-    private JButton 用户管理Button;
-    private JButton 订单管理Button;
-    private JButton 航班航次管理Button;
+    private JButton userManagementButton;
+    private JButton orderManagementButton;
+    private JButton flightManagementButton;
     public JPanel adminMenuJPanel;
     public JPanel viewJPanel;
     public CardLayout cardLayout;

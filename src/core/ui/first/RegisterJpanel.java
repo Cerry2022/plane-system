@@ -4,6 +4,12 @@ import com.formdev.flatlaf.FlatLightLaf;
 
 import javax.swing.*;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import static app.Main.registerJFrame;
+import static app.Main.registerJPanel;
+
 public class RegisterJpanel {
     public JPanel registerJpanel;
     private JTextField textField1;
@@ -17,5 +23,23 @@ public class RegisterJpanel {
     private JButton registerButton;
 
     private JTextField textField2;
+
+    public RegisterJpanel() {
+        cancelRegisterButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                registerJFrame.dispose();
+            }
+        });
+    }
+
+    public void registerFrameInit(){
+        registerJFrame.setContentPane(registerJPanel.registerJpanel);
+        registerJFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        registerJFrame.pack();
+        registerJFrame.setLocationRelativeTo(null);
+        registerJFrame.setResizable(false);
+        registerJFrame.setVisible(true);
+    }
 
 }
