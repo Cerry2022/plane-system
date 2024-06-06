@@ -1,6 +1,7 @@
 package core.service;
 
 import core.database.Database;
+import core.ui.admin.AdminFrame;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,6 +11,8 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import static app.Main.loginJPanel;
+import static app.Main.adminFrame;
+
 
 public class LoginService {
 	
@@ -52,6 +55,7 @@ public class LoginService {
 			JOptionPane.showMessageDialog(jf, "登录成功，正在跳转...");
 			if(username.equals("admin")) {
 				//new AdminFrame(name);
+				adminFrame = new AdminFrame();
 			}else {
 				System.out.println("普通用户登录成功");
 				//new UserFrame(username, name);

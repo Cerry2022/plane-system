@@ -18,7 +18,7 @@ public class Main {
     public static LoginJpanel loginJPanel;
     public static RegisterJpanel registerJPanel;
 
-    public static AdminFrame AdminFrame;
+    public static AdminFrame adminFrame;
 
     public static void main(String[] args) {
         //FlatLightLaf.setup();
@@ -35,14 +35,13 @@ public class Main {
         loginJPanel = new LoginJpanel();
         registerJPanel = new RegisterJpanel();
 
-        AdminFrame = new AdminFrame();
 
-/*        loginJFrame.setContentPane(loginJPanel.LoginJpanel);
+        loginJFrame.setContentPane(loginJPanel.LoginJpanel);
         loginJFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         loginJFrame.pack();
         loginJFrame.setLocationRelativeTo(null);
         loginJFrame.setResizable(false);
-        loginJFrame.setVisible(true);*/
+        loginJFrame.setVisible(true);
         // new AdminFrame("管理员");
         // new UserFrame("a12345","张三");
     }
