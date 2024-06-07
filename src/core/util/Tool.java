@@ -5,9 +5,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.swing.BorderFactory;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
 public class Tool {
 	
@@ -34,12 +33,10 @@ public class Tool {
 		return arr;
 	}
 
-	
-	//传入面板，设置边框
-	public static void setBorder(JPanel jp) {
-		jp.setBorder(BorderFactory.createLineBorder(Color.black, 1));
-	}
-	
+
+
+
+
 	//获得今天的日期和输入的日期做比较
 	public static boolean Tomorrow(String date) {
 		Date d = new Date();

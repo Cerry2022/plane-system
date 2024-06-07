@@ -31,12 +31,16 @@ public class Main {
         UIManager.put( "TextComponent.arc", 10 );
 
 
+
         loginJFrame = new JFrame("机票预定管理系统");
         registerJFrame = new JFrame("用户注册");
         loginJPanel = new LoginJpanel();
         registerJPanel = new RegisterJpanel();
 
-        loginJPanel.loginFrameInit();
+        adminFrame = new AdminFrame();
+
+        //loginJPanel.loginFrameInit();
+        adminFrame.initFrame();
 
     }
 

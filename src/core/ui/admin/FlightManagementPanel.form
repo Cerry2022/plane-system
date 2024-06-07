@@ -28,7 +28,7 @@
             </constraints>
             <properties>
               <background color="-13074953"/>
-              <foreground color="-2500135"/>
+              <foreground color="-1"/>
               <text value="添加"/>
             </properties>
           </component>
@@ -40,10 +40,11 @@
             </constraints>
             <properties>
               <background color="-2500135"/>
+              <foreground color="-16777216"/>
               <text value="取消修改"/>
             </properties>
           </component>
-          <component id="5edf4" class="javax.swing.JButton" binding="删除Button" default-binding="true">
+          <component id="5edf4" class="javax.swing.JButton" binding="deleteRow">
             <constraints>
               <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="120" height="50"/>
@@ -51,7 +52,7 @@
             </constraints>
             <properties>
               <background color="-34209"/>
-              <foreground color="-2500135"/>
+              <foreground color="-1"/>
               <text value="删除"/>
             </properties>
           </component>
@@ -63,6 +64,7 @@
             </constraints>
             <properties>
               <background color="-9578865"/>
+              <foreground color="-1"/>
               <text value="保存修改"/>
             </properties>
           </component>
@@ -99,6 +101,7 @@
             </constraints>
             <properties>
               <background color="-2500135"/>
+              <foreground color="-16777216"/>
               <text value="完成"/>
             </properties>
           </component>
@@ -117,12 +120,6 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="544a5" class="javax.swing.JTable" binding="flightTable">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties/>
-          </component>
           <grid id="dff2a" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
@@ -306,6 +303,19 @@
               </vspacer>
             </children>
           </grid>
+          <scrollpane id="d0cf9">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="c53cb" class="javax.swing.JTable" binding="flightTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
         </children>
       </grid>
     </children>

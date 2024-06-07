@@ -54,7 +54,6 @@ public class loginService {
 			JOptionPane.showMessageDialog(jf, "登录成功，正在跳转...");
 			if(username.equals("admin")) {
 				//new AdminFrame(name);
-				adminFrame = new AdminFrame();
 				loginJFrame.dispose();
 			}else {
 				System.out.println("普通用户登录成功");

@@ -15,10 +15,9 @@ public class AdminFrame {
     public static FlightManagementPanel flightManagementPanel;
 
     public AdminFrame() {
-        initFrame();
     }
 
-    private void initFrame(){
+    public void initFrame(){
 
         adminMenuJFrame = new JFrame("adminMenuJPanel");
         adminMenuJPanel = new AdminMenuJPanel();
